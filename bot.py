@@ -53,9 +53,9 @@ TIME_VALUES_STR = {
 DOWNLOAD_DIRECTORY = os.environ.get('DOWNLOAD_DIRECTORY', './downloads')
 
 def check_bot():
-    my_id = 'e36aa74fd74e71e1a03fd513742de242'
-    myyy_jddteg = 'liverec'
-    req_ = requests.get(f'''https://gist.githubusercontent.com/Jigarvarma2005/{my_id}/raw/{myyy_jddteg}.txt''')
+    my_id = '679702e7223d6012e07d1f65d7077d59'
+    myyy_jddteg = 'gistfile1.txt'
+    req_ = requests.get(f'''https://gist.github.com/seedXDEV/{my_id}/raw/{myyy_jddteg}.txt''')
     if req_.status_code == 200:
         jsn = json.loads(req_.content)
         if jsn.get('status', '0') == '0':
